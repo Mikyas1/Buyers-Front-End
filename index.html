@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <script src="https://use.fontawesome.com/091e828c4b.js"></script> -->
+    <title>kiosk-buyers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but kiosk-buyers doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+
+        <!-- NAV BAR -->
+        <cnav inline-template>
+            
+            <div>
+
+                <nav class="navbar fixed-top navbar-dark c-nav">
+                    <div class="navbar-brand" href="#"> 
+                        <i v-on:click="handleNavClick('navDrawer')" class="fa fa-bars c-drawer-icon"></i>
+                        Kiosk
+                    </div>
+                    <span class="navbar-text c-right-icons">
+                        <i v-on:click="handleNavClick('search')" class="fa fa-search"></i>
+                        <i v-on:click="handleNavClick('cart')" class="fa fa-shopping-cart"></i>
+                        <i v-on:click="handleNavClick('account')" class="fa fa-user"></i>
+                    </span>
+                </nav>
+
+                <div style="height: 70px"></div>
+                
+                <div v-if="navDrawer">
+                    <h3>The Best looking Nav Drawer to be implimented</h3>
+                </div>
+
+                <div v-if="search">
+                    <h3>The Best looking Search bar to be implimented</h3>
+                </div>
+
+                <div v-if="cart">
+                    <h3>The Best looking cart to be implimented</h3>
+                </div>
+
+                <div v-if="account">
+                    <h3>The Best looking account to be implimented</h3>
+                </div>
+            
+            </div>
+            
+        </cnav>
+
+        <!-- MAIN SECTION -->
+        <cmain inline-template>
+
+            <div v-on:click="main_clicked">
+
+                <h2>Things can go here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima totam sit corporis placeat delectus sed iure, aliquam, nostrum impedit quas? Harum eum magnam asperiores similique consequatur praesentium inventore dignissimos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima totam sit corporis placeat delectus sed iure, aliquam, nostrum impedit quas? Harum eum magnam asperiores similique consequatur praesentium inventore dignissimos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima totam sit corporis placeat delectus sed iure, aliquam, nostrum impedit quas? Harum eum magnam asperiores similique consequatur praesentium inventore dignissimos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima totam sit corporis placeat delectus sed iure, aliquam, nostrum impedit quas? Harum eum magnam asperiores similique consequatur praesentium inventore dignissimos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima totam sit corporis placeat delectus sed iure, aliquam, nostrum impedit quas? Harum eum magnam asperiores similique consequatur praesentium inventore dignissimos!</p>
+
+            </div>
+            
+        </cmain>
+
+
+    </div>
+
+    <!-- scripts -->
+    <script src="js/event.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

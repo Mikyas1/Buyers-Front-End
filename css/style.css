@@ -1,0 +1,24 @@
+.c-nav {
+    background-image: linear-gradient(to right bottom, #00283A, #1E88E5);
+}
+
+.c-right-icons {
+    color: white !important;
+}
+
+.c-right-icons i {
+    margin-left: 15px;
+}
+
+.c-drawer-icon {
+    margin-right: 15px;
+    margin-left: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .c-nav {
+        height: 40px;
+        padding-top: 1px !important;
+    }
+  }
