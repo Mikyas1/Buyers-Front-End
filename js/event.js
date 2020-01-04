@@ -1,4 +1,4 @@
-(function(global, $){
+;(function(global, $){
 
     global.Event = new class {
 

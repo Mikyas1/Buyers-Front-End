@@ -1,4 +1,4 @@
-(function(global, $){
+;(function(global, $){
 
     $.component('cmain', {
 
@@ -13,7 +13,7 @@
             }
         },
         created() {
-            
+        
         }
     });
 

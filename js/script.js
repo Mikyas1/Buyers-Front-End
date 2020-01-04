@@ -1,4 +1,4 @@
-(function(global, $){
+;(function(global, $){
     
     new $({
         el: "#app",
@@ -6,10 +6,12 @@
 
         },
         methods: {
-            
+            under_drawer_clicked() {
+                Event.fire('main_clicked');
+            }
         },
         created() {
-
+            
         }
     })
     
